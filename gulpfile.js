@@ -8,10 +8,13 @@ gulp.task('test', function() {
         .on('error', notify.onError({
             title: 'Darn!',
             message: 'Your tests failed Matthew:-(',
+            icon: __dirname + '/fail.png'
         }))
         .pipe(notify({
             title: "Woopee!",
-            message: 'It\'s so easy bein\' green!'
+            message: 'It\'s so easy bein\' green!',
+            icon: __dirname + '/success.png'
+
         }));
 });
 
